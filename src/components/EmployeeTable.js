@@ -6,11 +6,7 @@ const StudentTable = (context) => {
 	const employeeDetails = employee.map((employ) =>
 		employeeManager.addFields({ ...context, data: { employ, bonus }}));
 
-	/* employeeBonus
-	= employeeManager.getBonus({ ...context, data:  });*/
-
 	return 	<table>
-
 		<tr>
 			<th>employeeId</th>
 			<th>name</th>
@@ -21,7 +17,6 @@ const StudentTable = (context) => {
 			<th>annualSalary</th>
 			<th>bonusPercent</th>
 			<th>bonusAmount</th>
-
 		</tr>
 		{ employeeDetails.map((val, key) =>
 			<tr key={ key }>
